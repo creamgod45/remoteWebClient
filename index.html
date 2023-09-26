@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>遠端連接系統</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
+    <script src="assets/js/popperjs.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/core.js"></script>
+</head>
+<body>
+<a class="btn btn-primary rounded-circle refresh p-1 m-2" onclick="location.reload()" role="button"
+   data-bs-toggle="tooltip" data-bs-placement="right" title="重新加載系統。"><i class="fa-solid fa-rotate-right"></i></a>
+<div class="vm">
+    <div class="login-panel">
+        <div class="box">
+            <h3 class="text-center">遠端連接系統</h3>
+            <form class="needs-validation" action="" method="post" novalidate>
+                <div class="form-floating mb-3 has-validation">
+                    <input type="url" class="form-control" id="ServerName" value="http://localhost/api/remote/"
+                           placeholder="請輸入伺服器位置" required>
+                    <label for="ServerName">伺服器位置</label>
+                    <div class="invalid-feedback">
+                        請輸入正確的位置
+                    </div>
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="form-floating mb-3 has-validation">
+                    <input type="text" class="form-control" id="username" placeholder="請輸入帳號" required>
+                    <label for="username">帳號</label>
+                    <div class="invalid-feedback">
+                        請輸入正確的帳號
+                    </div>
+                </div>
+                <div class="form-floating mb-5 has-validation">
+                    <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                    <label for="password">密碼</label>
+                    <div class="invalid-feedback">
+                        請輸入正確的密碼
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-success btn-lg">登入</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

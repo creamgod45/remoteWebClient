@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.refresh{
+    width: 32px;
+    height: 32px;
+}
+
+.login-panel{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box{
+        padding: 32px;
+        width: 500px;
+        height: 500px;
+        background: #eee8e8;
+        border-radius: 2em;
+    }
+}
